@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RATINGS & REVIEW</title>
+	
+</head>
+<body>
+	
+			<fieldset>
+				<legend><h1>RATINGS & REVIEW</h1></legend>
+				
+			<table border="1">
+		<tr>
+			<th>id</th>
+			<th>Product name</th>
+			<th>review</th>		
+			<th>ratings</th>
+		
+		</tr>
+
+		<% for(var i=0; i < userList.length; i++){ %>
+		<tr>
+			<td><%= userList[i].id %></td>
+			<td><%= userList[i].product_name %></td>
+			<td><%= userList[i].review %></td>
+			<td><%= userList[i].ratings %></td>
+			
+			
+		</tr>
+		<% } %>
+	</table><br/>
+			
+	
+	<a href ='/home'>Back</a>	
+	</fieldset>
+</body>
+</html>

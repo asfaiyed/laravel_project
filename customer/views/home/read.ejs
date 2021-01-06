@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>READ NOTICES</title>
+		
+</head>
+<body>
+<fieldset>
+
+<h1>READ NOTICES</h1>
+<table border="1">
+		<tr>
+			
+			<th>name</th>
+			<th>product_name</th>
+			<th>notice</th>		
+			<th>date</th>
+		
+		</tr>
+
+		<% for(var i=0; i < userList.length; i++){ %>
+		<tr>
+			<td><%= userList[i].name %></td>
+			<td><%= userList[i].product_name%></td>
+			
+			<td><%= userList[i].notice %></td>
+			<td><%= userList[i].date %></td>
+			
+			
+		</tr>
+		<% } %>
+	</table><br/>
+		
+		<a href="/home/notices">Back</a>
+		<a href="/home">Go To Home Page</a>
+		<br/><br/>
+	
+		
+			
+		</fieldset>
+</body>
+</html>

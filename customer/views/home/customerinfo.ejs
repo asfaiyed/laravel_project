@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CUSTOMER'S INFORMATION</title>
+		
+	
+</head>
+<body>
+		<form>
+			<fieldset>
+				<legend><h1>CUSTOMER'S INFORMATION</h1></legend>
+				<table border="1">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>		
+			<th>gender</th>
+			<th>education</th>
+		</tr>
+
+		<% for(var i=0; i < userList.length; i++){ %>
+		<tr>
+			<td><%= userList[i].id %></td>
+			<td><%= userList[i].username %></td>
+			<td><%= userList[i].email %></td>
+			<td><%= userList[i].gender %></td>
+			<td><%= userList[i].education %></td>
+			
+		</tr>
+		<% } %>
+	</table><br/>
+				
+				<a href="/home">Back</a>
+				
+			</fieldset>
+			
+		</form>
+</body>
+</html>
